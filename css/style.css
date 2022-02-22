@@ -38,6 +38,7 @@ a{
 
 .btn-forms:hover{
     color: var(--white);
+    text-decoration: none;
 }
 .btn-normal:hover{
     color: var(--dark-red);
@@ -1629,7 +1630,7 @@ section.institucional{
 }
 .social-box{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-start;
     align-content: center;
 }
@@ -1663,7 +1664,7 @@ section.institucional{
     text-align: center;
     color: var(--dark-red);
     padding: 8px 15px;
-    border: 1px solid rgb(179, 179, 179);
+    border: 1px solid var(--dark-red);
     border-radius: 3px;
     margin-bottom: 10px;
 }
@@ -1708,6 +1709,8 @@ section.institucional{
 .produto-tabela tbody tr{
     height: 45px;
     border-bottom: 1px solid rgb(104, 104, 104);
+    display: flex;
+    align-items: flex-end;
 }
 
 .produto-tabela tbody tr th{

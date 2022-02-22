@@ -204,15 +204,12 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                             <div class="imgbox">
                             <a href="produto-<?php echo $nome_url ?>"><img src="img/produtos/<?php echo $imagem ?>" alt=""></a>
                                 <ul class="action">
-                                    <!-- <li>
-                                        <i class="fas fa-heart"></i>
-                                        <span>Add aos Favoritos</span>
-                                    </li> -->
-                                    <li><a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
-                                            <span>Adicionar ao carrinho</span>
-                                        </li>
                                     <li>
-                                    <a href="produto-<?php echo $nome_url ?>"><i class="fas fa-eye"></i></a>
+                                        <a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
+                                        <span>Adicionar ao carrinho</span>
+                                    </li>
+                                    <li>
+                                        <a href="produto-<?php echo $nome_url ?>"><i class="fas fa-eye"></i></a>
                                         <span>Ver Detalhes</span>
                                     </li>
                                 </ul>
@@ -220,7 +217,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                             <div class="content">
                                 <div class="productName">
                                     <h3><a href="produto-<?php echo $nome_url ?>"><?php echo $nome ?></a></h3>
-                                    <p><?php echo $nome_categoria ?></p>
                                 </div>
                                 <div class="price-rating">
                                     <h2>R$ <?php echo $valor ?></h2>
@@ -263,11 +259,12 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                             <div class="imgbox">
                             <a href="produto-<?php echo $nome_url ?>"><img src="img/produtos/<?php echo $imagem ?>" alt=""></a>
                                 <ul class="action">
-                                    <li><a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
-                                            <span>Adicionar ao carrinho</span>
-                                        </li>
                                     <li>
-                                    <a href="produto-<?php echo $nome_url ?>"><i class="fas fa-eye"></i></a>
+                                        <a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
+                                        <span>Adicionar ao carrinho</span>
+                                    </li>
+                                    <li>
+                                        <a href="produto-<?php echo $nome_url ?>"><i class="fas fa-eye"></i></a>
                                         <span>Ver Detalhes</span>
                                     </li>
                                 </ul>
@@ -275,7 +272,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                             <div class="content">
                                 <div class="productName">
                                     <h3><a href="produto-<?php echo $nome_url ?>"><?php echo $nome ?></a></h3>
-                                    <p><?php echo $nome_categoria ?></p>
                                 </div>
                                 <div class="price-rating">
                                     <h2>R$ <?php echo $valor ?></h2>
@@ -321,15 +317,12 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                         <div class="imgbox">
                         <a href="produto-<?php echo $nome_url ?>"><img src="img/produtos/<?php echo $imagem ?>" alt=""></a>
                             <ul class="action">
-                                <!-- <li>
-                                    <i class="fas fa-heart"></i>
-                                    <span>Add aos Favoritos</span>
-                                </li> -->
-                                <li><a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
-                                            <span>Adicionar ao carrinho</span>
-                                        </li>
                                 <li>
-                                <a href="produto-<?php echo $nome_url ?>"><i class="fas fa-eye"></i></a>
+                                    <a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
+                                    <span>Adicionar ao carrinho</span>
+                                </li>
+                                <li>
+                                    <a href="produto-<?php echo $nome_url ?>"><i class="fas fa-eye"></i></a>
                                     <span>Ver Detalhes</span>
                                 </li>
                             </ul>
@@ -337,7 +330,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                         <div class="content">
                             <div class="productName">
                                 <h3><a href="produto-<?php echo $nome_url ?>"><?php echo $nome ?></a></h3>
-                                <p><?php echo $nome_categoria ?></p>
                             </div>
                             <div class="price-rating">
                                 <h2>R$ <?php echo $valor ?></h2>
@@ -362,11 +354,9 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
             <div class="headline">
                 <h4>Kits / Promoções</h4>
             </div>
-
             <div class="product-container">
                 <div class="swiper myProducts">
                     <div class="swiper-wrapper">
-
                     <?php 
                             $query = $pdo->query("SELECT * FROM produtos order by vendas desc limit 8 ");
                             $res = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -397,10 +387,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                                 <div class="imgbox">
                                 <a href="produto-<?php echo $nome_url ?>"><img src="img/produtos/<?php echo $imagem ?>" alt=""></a>
                                     <ul class="action">
-                                        <!-- <li>
-                                            <i class="fas fa-heart"></i>
-                                            <span>Add aos Favoritos</span>
-                                        </li> -->
                                         <li><a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
                                             <span>Adicionar ao carrinho</span>
                                         </li>
@@ -413,7 +399,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                                 <div class="content">
                                     <div class="productName">
                                         <h3><a href="produto-<?php echo $nome_url ?>"><?php echo $nome ?></a></h3>
-                                        <p><?php echo $nome_categoria ?></p>
                                     </div>
                                     <div class="price-rating">
                                         <h2>R$ <?php echo $valor ?></h2>
@@ -435,10 +420,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                             <div class="imgbox">
                             <a href="produto-<?php echo $nome_url ?>"><img src="img/produtos/<?php echo $imagem ?>" alt=""></a>
                                 <ul class="action">
-                                    <!-- <li>
-                                        <i class="fas fa-heart"></i>
-                                        <span>Add aos Favoritos</span>
-                                    </li> -->
                                     <li><a href="" onclick="carrinhoModal('<?php echo $id ?>, Não')"><i class="fa fa-shopping-cart"></i></a>
                                             <span>Adicionar ao carrinho</span>
                                         </li>
@@ -451,7 +432,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
                             <div class="content">
                                 <div class="productName">
                                     <h3><a href="produto-<?php echo $nome_url ?>"><?php echo $nome ?></a></h3>
-                                    <p><?php echo $nome_categoria ?></p>
                                 </div>
                                 <div class="price-rating">
                                     <h2>R$ <?php echo $valor ?></h2>
@@ -468,7 +448,6 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
 
                         <?php } } ?>
                     </div>
-                    <!-- <div class="swiper-pagination"></div> -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
@@ -488,5 +467,4 @@ if(@$_REQUEST['subcategoria'] === @$subcategoria_nome && !@$_REQUEST['categoria'
 <?php
 require_once("newsletter.php");
 require_once("rodape.php");
-// require_once("modal-carrinho.php");
 ?>
